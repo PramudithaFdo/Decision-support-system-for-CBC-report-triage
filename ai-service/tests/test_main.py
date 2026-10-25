@@ -103,7 +103,7 @@ def test_train_and_model_metrics_endpoints():
     assert "macro_f1" in response.json()["metrics"]
     assert response.json()["metrics"]["training_data"] == "neerogya_healthcare_fbc_1000"
     assert response.json()["metrics"]["dataset_size"] == 1000
-    assert response.json()["metrics"]["real_patient_data"] is True
+    assert response.json()["metrics"]["real_patient_data"] is False
 
     metrics_response = client.get("/model-metrics")
 

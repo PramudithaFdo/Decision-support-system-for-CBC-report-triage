@@ -1,6 +1,6 @@
 # Dataset Summary Report
 
-> Generated: 2026-09-20 21:20:25
+> Generated: 2026-10-25 11:48:20
 
 ## 1. Dataset Overview
 
@@ -10,7 +10,7 @@
 | **Location** | Polonnaruwa, Sri Lanka |
 | **Dataset Name** | Neerogya Health Care (PVT) Ltd CBC Clinical Dataset |
 | **Total Records** | 1000 |
-| **Real Clinical Data** | True |
+| **Real Clinical Data** | False |
 | **Source Notice** | Clinical laboratory FBC dataset collected from Neerogya Health Care (PVT) Ltd, Polonnaruwa, Sri Lanka. |
 
 ## 2. Class Distribution

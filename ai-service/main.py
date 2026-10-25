@@ -1,5 +1,7 @@
+from __future__ import annotations
+
 import json
-from typing import Any
+from typing import Any, Optional
 
 import networkx as nx
 from fastapi import FastAPI
@@ -28,22 +30,22 @@ MODEL_BUNDLE = load_model()
 
 
 class PredictionRequest(BaseModel):
-    values: dict[str, float | None]
+    values: dict[str, Optional[float]]
     analyzer_flags: list[str] = Field(default_factory=list)
 
 
 class Node(BaseModel):
     id: int
     label: str
-    role: str | None = None
+    role: Optional[str] = None
 
 
 class Edge(BaseModel):
     source: int
     target: int
     interaction_type: str = "handover"
-    channel: str | None = None
-    delay_minutes: int | None = None
+    channel: Optional[str] = None
+    delay_minutes: Optional[int] = None
     weight: int = 1
 
 

@@ -158,7 +158,7 @@ def build_clinical_dataset() -> tuple[list[list[float]], list[str], dict[str, ob
         "laboratory": "Neerogya Health Care (PVT) Ltd",
         "location": "Polonnaruwa, Sri Lanka",
         "dataset_size": len(labels),
-        "real_patient_data": True,
+        "real_patient_data": False,
         "dataset_path": str(DATASET_PATH),
         "source_notice": "Clinical laboratory FBC dataset collected from Neerogya Health Care (PVT) Ltd, Polonnaruwa, Sri Lanka.",
     }
@@ -175,7 +175,7 @@ def train() -> dict[str, object]:
         dataset_meta = {
             "training_data": "fallback_clinical_fbc_rule_labels",
             "dataset_size": SAMPLE_COUNT,
-            "real_patient_data": True,
+            "real_patient_data": False,
             "source_notice": "Fallback clinical FBC records from Neerogya Health Care.",
         }
 
