@@ -1,0 +1,5 @@
+actual_class,Routine,Abnormal non-critical,Critical / urgent,Uncertain / manual review
+Routine,100,0,0,0
+Abnormal non-critical,3,85,0,0
+Critical / urgent,0,0,27,0
+Uncertain / manual review,0,0,0,35

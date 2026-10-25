@@ -1,0 +1,41 @@
+metric,set,fold,score
+Accuracy,test,1,0.975
+Accuracy,test,2,0.97
+Accuracy,test,3,1.0
+Accuracy,test,4,0.995
+Accuracy,test,5,0.995
+Macro F1,test,1,0.9803
+Macro F1,test,2,0.9768
+Macro F1,test,3,1.0
+Macro F1,test,4,0.9966
+Macro F1,test,5,0.9966
+Macro Precision,test,1,0.9795
+Macro Precision,test,2,0.9767
+Macro Precision,test,3,1.0
+Macro Precision,test,4,0.9969
+Macro Precision,test,5,0.9969
+Macro Recall,test,1,0.9821
+Macro Recall,test,2,0.9786
+Macro Recall,test,3,1.0
+Macro Recall,test,4,0.9964
+Macro Recall,test,5,0.9964
+Accuracy,train,1,0.9975
+Accuracy,train,2,0.9962
+Accuracy,train,3,0.9912
+Accuracy,train,4,0.9925
+Accuracy,train,5,0.9938
+Macro F1,train,1,0.9983
+Macro F1,train,2,0.9975
+Macro F1,train,3,0.9941
+Macro F1,train,4,0.995
+Macro F1,train,5,0.9958
+Macro Precision,train,1,0.9984
+Macro Precision,train,2,0.9977
+Macro Precision,train,3,0.9946
+Macro Precision,train,4,0.9954
+Macro Precision,train,5,0.9962
+Macro Recall,train,1,0.9982
+Macro Recall,train,2,0.9973
+Macro Recall,train,3,0.9938
+Macro Recall,train,4,0.9946
+Macro Recall,train,5,0.9955

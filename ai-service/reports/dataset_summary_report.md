@@ -1,0 +1,153 @@
+# Dataset Summary Report
+
+> Generated: 2026-09-20 21:20:25
+
+## 1. Dataset Overview
+
+| Property | Value |
+|----------|-------|
+| **Laboratory Name** | Neerogya Health Care (PVT) Ltd |
+| **Location** | Polonnaruwa, Sri Lanka |
+| **Dataset Name** | Neerogya Health Care (PVT) Ltd CBC Clinical Dataset |
+| **Total Records** | 1000 |
+| **Real Clinical Data** | True |
+| **Source Notice** | Clinical laboratory FBC dataset collected from Neerogya Health Care (PVT) Ltd, Polonnaruwa, Sri Lanka. |
+
+## 2. Class Distribution
+
+| Triage Category | Count | Percentage |
+|-----------------|-------|------------|
+| Routine | 400 | 40.0% |
+| Abnormal non-critical | 350 | 35.0% |
+| Critical / urgent | 110 | 11.0% |
+| Uncertain / manual review | 140 | 14.0% |
+| **Total** | **1000** | **100%** |
+
+## 3. Feature Statistics (per class)
+
+### 3.1 Overall Feature Statistics
+
+| Feature | Mean | Std | Min | Max |
+|---------|------|-----|-----|-----|
+| WBC | 7.61 | 6.2 | 0.72 | 59.06 |
+| RBC | 4.55 | 0.71 | 1.53 | 6.6 |
+| HGB | 13.32 | 2.44 | 5.0 | 21.97 |
+| HCT | 39.85 | 6.82 | 14.52 | 64.56 |
+| PLT | 264.65 | 98.17 | 9.8 | 683.29 |
+| MCV | 87.69 | 8.66 | 54.13 | 122.48 |
+| MCH | 29.2 | 2.67 | 16.83 | 38.77 |
+| MCHC | 33.52 | 2.29 | 25.2 | 43.17 |
+| RDW | 13.77 | 1.63 | 11.24 | 22.63 |
+| MPV | 9.7 | 1.21 | 7.31 | 16.09 |
+| NEUTROPHILS | 4.61 | 4.46 | 0.23 | 46.99 |
+| LYMPHOCYTES | 2.15 | 1.39 | 0.22 | 17.73 |
+| MONOCYTES | 0.52 | 0.55 | 0.07 | 7.51 |
+| EOSINOPHILS | 0.26 | 0.31 | 0.0 | 2.96 |
+| BASOPHILS | 0.09 | 0.14 | 0.0 | 1.7 |
+
+### 3.2 Feature Statistics by Triage Category
+
+#### Routine (n=400)
+
+| Feature | Mean | Std | Min | Max |
+|---------|------|-----|-----|-----|
+| WBC | 6.59 | 1.51 | 4.2 | 10.5 |
+| RBC | 4.65 | 0.45 | 4.0 | 5.8 |
+| HGB | 13.86 | 1.53 | 12.2 | 17.2 |
+| HCT | 41.29 | 4.26 | 36.5 | 51.0 |
+| PLT | 261.49 | 58.15 | 155.0 | 419.86 |
+| MCV | 88.32 | 5.48 | 80.5 | 99.5 |
+| MCH | 29.56 | 1.49 | 27.2 | 32.8 |
+| MCHC | 33.8 | 1.47 | 32.2 | 35.8 |
+| RDW | 13.15 | 0.84 | 11.6 | 14.4 |
+| MPV | 9.5 | 1.04 | 7.6 | 11.8 |
+| NEUTROPHILS | 3.86 | 0.96 | 2.1 | 6.52 |
+| LYMPHOCYTES | 2.04 | 0.62 | 1.05 | 3.84 |
+| MONOCYTES | 0.42 | 0.15 | 0.21 | 0.96 |
+| EOSINOPHILS | 0.2 | 0.11 | 0.01 | 0.48 |
+| BASOPHILS | 0.07 | 0.04 | 0.01 | 0.19 |
+
+#### Abnormal non-critical (n=350)
+
+| Feature | Mean | Std | Min | Max |
+|---------|------|-----|-----|-----|
+| WBC | 6.83 | 3.03 | 2.34 | 18.68 |
+| RBC | 4.49 | 0.9 | 2.61 | 6.6 |
+| HGB | 12.93 | 2.91 | 7.02 | 21.97 |
+| HCT | 39.02 | 8.29 | 16.57 | 64.56 |
+| PLT | 291.62 | 120.3 | 76.29 | 683.29 |
+| MCV | 87.41 | 11.71 | 54.13 | 122.48 |
+| MCH | 28.87 | 3.51 | 19.32 | 37.23 |
+| MCHC | 33.16 | 2.57 | 25.82 | 41.51 |
+| RDW | 14.47 | 1.81 | 11.3 | 21.17 |
+| MPV | 9.64 | 1.05 | 7.39 | 13.38 |
+| NEUTROPHILS | 4.0 | 2.46 | 1.0 | 17.07 |
+| LYMPHOCYTES | 2.06 | 1.1 | 0.59 | 7.54 |
+| MONOCYTES | 0.48 | 0.26 | 0.12 | 1.82 |
+| EOSINOPHILS | 0.29 | 0.31 | 0.0 | 1.84 |
+| BASOPHILS | 0.08 | 0.05 | 0.0 | 0.27 |
+
+#### Critical / urgent (n=110)
+
+| Feature | Mean | Std | Min | Max |
+|---------|------|-----|-----|-----|
+| WBC | 15.19 | 15.62 | 0.72 | 59.06 |
+| RBC | 4.31 | 0.89 | 1.53 | 5.85 |
+| HGB | 12.67 | 3.03 | 5.0 | 18.51 |
+| HCT | 37.55 | 8.42 | 14.52 | 54.89 |
+| PLT | 195.56 | 129.71 | 9.8 | 503.11 |
+| MCV | 86.9 | 8.31 | 58.0 | 117.25 |
+| MCH | 29.22 | 2.91 | 17.25 | 38.77 |
+| MCHC | 33.75 | 2.92 | 25.2 | 43.17 |
+| RDW | 13.98 | 2.15 | 11.54 | 22.63 |
+| MPV | 10.77 | 1.85 | 7.39 | 16.09 |
+| NEUTROPHILS | 10.18 | 11.03 | 0.23 | 46.99 |
+| LYMPHOCYTES | 3.05 | 3.27 | 0.22 | 17.73 |
+| MONOCYTES | 1.12 | 1.41 | 0.07 | 7.51 |
+| EOSINOPHILS | 0.44 | 0.63 | 0.0 | 2.96 |
+| BASOPHILS | 0.25 | 0.36 | 0.0 | 1.7 |
+
+#### Uncertain / manual review (n=140)
+
+| Feature | Mean | Std | Min | Max |
+|---------|------|-----|-----|-----|
+| WBC | 6.5 | 1.64 | 2.74 | 10.99 |
+| RBC | 4.58 | 0.57 | 3.11 | 6.35 |
+| HGB | 13.33 | 2.46 | 5.09 | 19.89 |
+| HCT | 39.62 | 6.4 | 17.69 | 61.64 |
+| PLT | 260.52 | 64.54 | 140.36 | 459.08 |
+| MCV | 87.2 | 7.11 | 59.27 | 107.36 |
+| MCH | 28.99 | 2.5 | 16.83 | 35.28 |
+| MCHC | 33.44 | 2.72 | 25.26 | 39.89 |
+| RDW | 13.66 | 1.63 | 11.24 | 20.36 |
+| MPV | 9.59 | 0.95 | 7.31 | 12.4 |
+| NEUTROPHILS | 3.86 | 1.1 | 1.32 | 8.04 |
+| LYMPHOCYTES | 2.01 | 0.72 | 0.33 | 5.8 |
+| MONOCYTES | 0.43 | 0.17 | 0.1 | 0.92 |
+| EOSINOPHILS | 0.21 | 0.21 | 0.0 | 1.59 |
+| BASOPHILS | 0.07 | 0.03 | 0.0 | 0.17 |
+
+
+## 4. Missing Value Summary
+
+| Feature | Missing Count | Missing % |
+|---------|--------------|-----------|
+| WBC | 3 | 0.3% |
+| RBC | 7 | 0.7% |
+| HGB | 9 | 0.9% |
+| HCT | 0 | 0.0% |
+| PLT | 6 | 0.6% |
+| MCV | 5 | 0.5% |
+| MCH | 0 | 0.0% |
+| MCHC | 0 | 0.0% |
+| RDW | 5 | 0.5% |
+| MPV | 4 | 0.4% |
+| NEUTROPHILS | 5 | 0.5% |
+| LYMPHOCYTES | 4 | 0.4% |
+| MONOCYTES | 6 | 0.6% |
+| EOSINOPHILS | 6 | 0.6% |
+| BASOPHILS | 4 | 0.4% |
+
+---
+
+*This report was auto-generated by `generate_thesis_reports.py` for MSc research documentation.*

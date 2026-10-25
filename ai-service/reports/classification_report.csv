@@ -1,0 +1,5 @@
+class,precision,recall,f1_score,specificity,roc_auc,support
+Routine,0.970873786407767,1.0,0.9852216748768473,0.98,0.1788,100
+Abnormal non-critical,1.0,0.9659090909090909,0.9826589595375722,1.0,0.5443,88
+Critical / urgent,1.0,1.0,1.0,1.0,0.2376,27
+Uncertain / manual review,1.0,1.0,1.0,1.0,1.0,35

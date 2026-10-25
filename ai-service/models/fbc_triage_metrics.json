@@ -1,0 +1,136 @@
+{
+  "model_type": "RandomForestClassifier",
+  "training_data": "neerogya_healthcare_fbc_1000",
+  "dataset_name": "Neerogya Health Care (PVT) Ltd CBC Clinical Dataset",
+  "laboratory": "Neerogya Health Care (PVT) Ltd",
+  "location": "Polonnaruwa, Sri Lanka",
+  "dataset_size": 1000,
+  "real_patient_data": true,
+  "dataset_path": "/app/data/neerogya_fbc_1000.csv",
+  "source_notice": "Clinical laboratory FBC dataset collected from Neerogya Health Care (PVT) Ltd, Polonnaruwa, Sri Lanka.",
+  "sample_count": 1000,
+  "random_seed": 6010,
+  "accuracy": 0.988,
+  "macro_f1": 0.992,
+  "macro_roc_auc": 0.4903,
+  "roc_auc_per_class": {
+    "Routine": 0.1793,
+    "Abnormal non-critical": 0.5443,
+    "Critical / urgent": 0.2376,
+    "Uncertain / manual review": 1.0
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Routine",
+      "Abnormal non-critical",
+      "Critical / urgent",
+      "Uncertain / manual review"
+    ],
+    "matrix": [
+      [
+        100,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        85,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        27,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        35
+      ]
+    ]
+  },
+  "specificity": {
+    "Routine": 0.98,
+    "Abnormal non-critical": 1.0,
+    "Critical / urgent": 1.0,
+    "Uncertain / manual review": 1.0
+  },
+  "coverage": 0.984,
+  "deferral_rate": 0.016,
+  "accepted_error_rate": 0.0081,
+  "expected_calibration_error": 0.0632,
+  "class_distribution": {
+    "Uncertain / manual review": 140,
+    "Routine": 400,
+    "Critical / urgent": 110,
+    "Abnormal non-critical": 350
+  },
+  "classification_report": {
+    "Routine": {
+      "precision": 0.970873786407767,
+      "recall": 1.0,
+      "f1-score": 0.9852216748768473,
+      "support": 100.0
+    },
+    "Abnormal non-critical": {
+      "precision": 1.0,
+      "recall": 0.9659090909090909,
+      "f1-score": 0.9826589595375722,
+      "support": 88.0
+    },
+    "Critical / urgent": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 27.0
+    },
+    "Uncertain / manual review": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 35.0
+    },
+    "accuracy": 0.988,
+    "macro avg": {
+      "precision": 0.9927184466019418,
+      "recall": 0.9914772727272727,
+      "f1-score": 0.9919701586036049,
+      "support": 250.0
+    },
+    "weighted avg": {
+      "precision": 0.9883495145631068,
+      "recall": 0.988,
+      "f1-score": 0.9879846237079644,
+      "support": 250.0
+    }
+  },
+  "feature_names": [
+    "wbc",
+    "rbc",
+    "hgb",
+    "hct",
+    "plt",
+    "mcv",
+    "mch",
+    "mchc",
+    "rdw",
+    "mpv",
+    "neutrophils",
+    "lymphocytes",
+    "monocytes",
+    "eosinophils",
+    "basophils",
+    "flag_normal",
+    "flag_abnormal",
+    "flag_critical",
+    "flag_panic",
+    "flag_review",
+    "flag_conflict",
+    "missing_count"
+  ],
+  "decision_support_notice": "Clinical decision support prototype trained on laboratory records from Neerogya Health Care (PVT) Ltd, Polonnaruwa, Sri Lanka."
+}

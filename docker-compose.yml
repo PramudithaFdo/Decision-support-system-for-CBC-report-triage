@@ -1,0 +1,86 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: fbc-mysql
+    environment:
+      MYSQL_DATABASE: fbc_triage
+      MYSQL_USER: fbc_user
+      MYSQL_PASSWORD: fbc_password
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot_password"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+    container_name: fbc-backend
+    environment:
+      APP_ENV: local
+      APP_DEBUG: "true"
+      APP_KEY: base64:dQz6QpjmK8C9o1mJrTRx1zCz82NbdpVQdV0gYOcJ9wQ=
+      DB_CONNECTION: mysql
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: fbc_triage
+      DB_USERNAME: fbc_user
+      DB_PASSWORD: fbc_password
+      AI_SERVICE_URL: http://ai-service:8001
+      FRONTEND_URL: http://localhost:5173
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/var/www/html
+      - backend-vendor:/var/www/html/vendor
+    depends_on:
+      mysql:
+        condition: service_healthy
+      ai-service:
+        condition: service_started
+
+  ai-service:
+    build:
+      context: ./ai-service
+    container_name: fbc-ai-service
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./ai-service:/app
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: fbc-frontend
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000/api
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - frontend-node-modules:/app/node_modules
+    depends_on:
+      - backend
+
+  phpmyadmin:
+    image: phpmyadmin:5
+    container_name: fbc-phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: root_password
+    ports:
+      - "8080:80"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  mysql-data:
+  backend-vendor:
+  frontend-node-modules:
